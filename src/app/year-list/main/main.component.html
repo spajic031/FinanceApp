@@ -1,0 +1,24 @@
+<div class="mainComp flex-col-c " *ngFor="let year of years | slice:0:1;">
+    <h1 class="borderAll-black right">{{ years[currentIndex].year }} ( id:
+        {{currentIndex}} )</h1>
+    <div class="flex-col-c right " *ngFor="let month of year.months ;let i=index  ">
+        <!-- LOOP ne radi dobro treba se ponavljati onoliko koliko ima mjeseci a ne koliko ima godina -->
+        <div class=" borderAll-black flex-between right">{{year.months[i].month}}
+            <div class=" flex-col-c">
+                <div>Earned</div>
+                <div>{{years[currentIndex].months[i].earned}} €</div>
+            </div>
+            <div class="flex-col-c">
+                <div>Spend</div>
+                <div>{{years[currentIndex].months[i].spend}} €</div>
+            </div>
+            <div class="flex-col-c">
+                <div>Total</div>
+                <div>{{years[currentIndex].months[i].total}} €</div>
+            </div>
+            <button (click)="proba(i)">MANAGE</button>
+        </div>
+    </div>
+
+    <div class="borderAll-black right">TOTAL : {{years[currentIndex].total}} €</div>
+</div>

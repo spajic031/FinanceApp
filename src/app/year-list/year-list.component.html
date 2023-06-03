@@ -1,0 +1,25 @@
+<div class="flex-c-t">
+    <div class="left">
+        <div class="listItem borderAll " *ngFor="let year of years let i=index"
+            (click)="clickEvent($event);divIndex(i)">
+            <div class="flex-c bgBlue borderTop white">{{ year.year }}</div>
+            <div class="flex-between">
+                <div class="flex-col-c">
+                    <h5>Earned</h5>
+                    <h5>{{year.totalEarned}}€</h5>
+                </div>
+                <div class="flex-col-c">
+                    <h5>Spend</h5>
+                    <h5>{{year.totalSpend}}€</h5>
+                </div>
+                <div class="flex-col-c">
+                    <h5>Total</h5>
+                    <h5>{{year.total}}€</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <app-main class="flex-c-t" [years]="years" [currentIndex]="currentIndex"></app-main>
+    </div>
+</div>
