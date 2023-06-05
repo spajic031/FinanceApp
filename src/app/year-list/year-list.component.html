@@ -1,5 +1,6 @@
 <div class="flex-c-t">
     <div class="left">
+        <button (click)="newYear()" class="btn borderAll bgGreen white text3">New Year</button>
         <div class="listItem borderAll " *ngFor="let year of years let i=index"
             (click)="clickEvent($event);divIndex(i)">
             <div class="flex-c bgBlue borderTop white">{{ year.year }}</div>

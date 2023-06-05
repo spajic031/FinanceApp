@@ -30,11 +30,8 @@ export class MainComponent implements OnInit {
  
  
   proba(i:number){
-    
-    this.idx = i;
-    console.log(this.idx)
-    
-    this.years[this.currentIndex].months[this.idx].spend = 3000;
+    this.idx = i; 
+    this.years[this.currentIndex].months[this.idx].spend = -3000;
     /* this.years.unshift(new Year(2222,"",3000,21312)); */
 
 

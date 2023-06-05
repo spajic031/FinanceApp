@@ -40,6 +40,16 @@ h5{text-align: center;
 font-size: 20px;
 margin: 2px;}
 
+.text1{
+    font-size: 30px;
+}
+.text2{
+    font-size: 25px;
+}
+.text3{
+    font-size: 20px;
+}
+
 
 /* FLEX */
 .flex-c{
@@ -78,4 +88,10 @@ margin: 2px;}
 }
 .borderTop{
     border-radius: 8px 8px 0 0;
+}
+/* BUTTONS */
+.btn{
+    width: 90%;
+    height: 2rem;
+    margin-top: 1rem;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, } from '@angular/core';
+import { Year } from './years.model';
 /* import { MainComponent } from './main/main.component'; */
 
 
@@ -34,7 +35,10 @@ divIndex(i:number){
   this.currentIndex = i;
 }
 
-
+newYear(){
+  //TEST
+  this.years.unshift(new Year(0,"",0,0));
+}
 
 
 }
